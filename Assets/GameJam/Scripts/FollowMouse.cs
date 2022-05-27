@@ -40,7 +40,7 @@ public class FollowMouse : MonoBehaviour
             this.transform.position = rightBorder.transform.position;
          }
          //Check for when player is in the middle 
-         else if (mouseWorldPosition.x >= -3.98 && mouseWorldPosition.x <= 3.98)
+         else if (mouseWorldPosition.x >= -4.2 && mouseWorldPosition.x <= 3.98)
          {
              Cursor. visible = false;
              transform.position = mouseWorldPosition;

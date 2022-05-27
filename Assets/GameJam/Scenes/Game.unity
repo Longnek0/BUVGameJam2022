@@ -152,7 +152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202709182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.98, y: -3.5, z: -8.862423}
+  m_LocalPosition: {x: -4.3, y: -4.2, z: -8.862423}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -614,8 +614,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 735.10376, y: 425.47397}
-  m_SizeDelta: {x: 924.6949, y: 519.7551}
+  m_AnchoredPosition: {x: 734.90814, y: 425.47397}
+  m_SizeDelta: {x: 830.0597, y: 519.7551}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1430261402
 MonoBehaviour:
@@ -637,7 +637,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 377895bcdb34c4140afc4871b295d83c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7e25872e31c810a4ea891d5f54f6e29f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1094,7 +1094,6 @@ GameObject:
   - component: {fileID: 1894316460}
   - component: {fileID: 1894316464}
   - component: {fileID: 1894316462}
-  - component: {fileID: 1894316459}
   - component: {fileID: 1894316463}
   m_Layer: 7
   m_Name: Player
@@ -1103,32 +1102,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1894316459
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894316458}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.005340576, y: -0.33967316}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.44, y: 2.8}
-    newSize: {x: 2.048, y: 2.048}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9491029, y: 0.14067578}
-  m_EdgeRadius: 0
 --- !u!212 &1894316460
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1385,7 +1358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074486271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.98, y: -3.5, z: -8.862423}
+  m_LocalPosition: {x: 4.3, y: -4.2, z: -8.862423}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
