@@ -18,12 +18,12 @@ public class FollowMouse : MonoBehaviour
     {
         mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorldPosition.y = -3.5f;
+        mouseWorldPosition.y = -3.8f;
         mouseWorldPosition.z = 0f;
         transform.position = mouseWorldPosition;
         if(this.transform.position.x >= 4)
         {
-            this.transform.position.x = 4;
+            //this.transform.position.x = 4;
         }
     }
 }
