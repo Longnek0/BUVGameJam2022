@@ -21,5 +21,9 @@ public class FollowMouse : MonoBehaviour
         mouseWorldPosition.y = -3.5f;
         mouseWorldPosition.z = 0f;
         transform.position = mouseWorldPosition;
+        if(this.transform.position.x >= 4)
+        {
+            this.transform.position.x = 4;
+        }
     }
 }
