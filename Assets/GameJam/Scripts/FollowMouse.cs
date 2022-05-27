@@ -27,22 +27,22 @@ public class FollowMouse : MonoBehaviour
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.y = -3.5f;
         mouseWorldPosition.z = 0f;
-        
-       
-        
-        
-        
+        //Check for when player reach left border
          if ( mouseWorldPosition.x <=- 4 )
          {
+             Cursor. visible = true;
             this.transform.position = leftBorder.transform.position;
          }
+         //Check for when player reach right border
          else if ( mouseWorldPosition.x >= 4 )
          {
+             Cursor. visible = true;
             this.transform.position = rightBorder.transform.position;
          }
+         //Check for when player is in the middle 
          else if (mouseWorldPosition.x >= -3.98 && mouseWorldPosition.x <= 3.98)
          {
-            
+             Cursor. visible = false;
              transform.position = mouseWorldPosition;
          }
         
