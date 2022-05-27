@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 962eff8175ca927428b4afc898603448
 TextureImporter:
   internalIDToNameTable:
@@ -470,6 +471,11 @@ TextureImporter:
   - first:
       213: 5198051154961294346
     second: Explosion Sprite@2x_155
+=======
+guid: 631afd460b6762f4e9a6950788189ab3
+TextureImporter:
+  internalIDToNameTable: []
+>>>>>>> 55c8a05f81c66ab5caa160f15a74aed72cb11587
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -509,7 +515,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> 55c8a05f81c66ab5caa160f15a74aed72cb11587
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -543,6 +553,7 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -822,6 +833,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+=======
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+>>>>>>> 55c8a05f81c66ab5caa160f15a74aed72cb11587
     outline: []
     physicsShape: []
     bones: []
