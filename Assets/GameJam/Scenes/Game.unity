@@ -1155,6 +1155,7 @@ MonoBehaviour:
   player: {fileID: 1894316458}
   leftBorder: {fileID: 202709183}
   rightBorder: {fileID: 2074486272}
+  maxSpeed: 10
 --- !u!1 &2060801566
 GameObject:
   m_ObjectHideFlags: 0
