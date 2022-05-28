@@ -1354,6 +1354,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.058825
       objectReference: {fileID: 0}
+    - target: {fileID: 1404920823282680477, guid: 7caceb5026e290340aaf28dabde0cfa3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1404920823282680477, guid: 7caceb5026e290340aaf28dabde0cfa3, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2067679436580284517, guid: 7caceb5026e290340aaf28dabde0cfa3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1442,6 +1450,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurShipv1.1
       objectReference: {fileID: 0}
+    - target: {fileID: 4915657208285220312, guid: 7caceb5026e290340aaf28dabde0cfa3, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5520095296654748568, guid: 7caceb5026e290340aaf28dabde0cfa3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.262
@@ -1475,9 +1487,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2074486272}
     - target: {fileID: 9129128419349085956, guid: 7caceb5026e290340aaf28dabde0cfa3, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1458522548}
+    - target: {fileID: 9129128419349085956, guid: 7caceb5026e290340aaf28dabde0cfa3, type: 3}
       propertyPath: rightBorder
       value: 
       objectReference: {fileID: 202709183}
+    - target: {fileID: 9211716400867526347, guid: 7caceb5026e290340aaf28dabde0cfa3, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7caceb5026e290340aaf28dabde0cfa3, type: 3}
 --- !u!1 &1217189529
