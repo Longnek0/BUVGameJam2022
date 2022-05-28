@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+<<<<<<< HEAD
     public Text levelUp, maxLevel, livesUp;
     GameObject a, b;
 
@@ -17,6 +18,9 @@ public class Player : MonoBehaviour
     public AudioClip livesUp;
     public AudioClip levelUp;
 
+=======
+    public float PlayerHealth;
+>>>>>>> 828fd8ccb7d057fb2ddfc5b0394aa8984d309631
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +31,13 @@ public class Player : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Asteroid")
+        {
+            PlayerHealth -= damage;
+        }
     }
 }
