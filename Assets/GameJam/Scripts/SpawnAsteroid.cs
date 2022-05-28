@@ -18,11 +18,20 @@ public class SpawnAsteroid : MonoBehaviour
     {
         
     }
+
     void SpawnAsteroids()
     {
         for (int i = 0; i < waves; i++)
         {
             Instantiate(asteroids[(int)Random.Range(0, asteroids.Length)], new Vector3(Random.Range(-8f, 8f), 5.5f, 1), Quaternion.identity);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Des")
+        {
+            Destroy(this.gameObject);
         }
     }
 }
