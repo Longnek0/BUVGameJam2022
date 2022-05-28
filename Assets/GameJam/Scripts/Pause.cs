@@ -24,7 +24,7 @@ public class Pause : MonoBehaviour
         Debug.Log(Time.deltaTime);
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (GamePaused)
+            if (GamePaused == true)
             {
                 Resume();
             }

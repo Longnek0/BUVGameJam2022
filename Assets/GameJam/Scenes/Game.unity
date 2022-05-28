@@ -3541,6 +3541,10 @@ PrefabInstance:
       propertyPath: FailMenu
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2040329561179185407, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: GamePaused
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3999857913140982166, guid: 76452befaa333d34ca959b98cec02451, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
