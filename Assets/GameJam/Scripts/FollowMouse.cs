@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FollowMouse : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class FollowMouse : MonoBehaviour
     public bool canMove;
     public Pause pause;
     public bool takeOff; //changed based on level
+
+    [SerializeField] public GameObject shield;
+    [SerializeField] public float shieldDur;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +36,10 @@ public class FollowMouse : MonoBehaviour
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.y = -2.85f;
         mouseWorldPosition.z = 0f;
-
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            StartCoroutine(ShieldSkill());
+        }
         if (pause.GamePaused)
         {
             canMove = false;
@@ -93,5 +100,11 @@ public class FollowMouse : MonoBehaviour
         yield return new WaitForSeconds(3);
         takeOff = false;
         canMove = true;
+    }
+    public IEnumerator ShieldSkill()
+    {
+        shield.SetActive(true);
+        yield return new WaitForSeconds(3);
+        shield.SetActive(false);
     }
 }
