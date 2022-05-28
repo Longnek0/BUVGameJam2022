@@ -10,7 +10,8 @@ public class Player : MonoBehaviour
     
     public Rigidbody2D rb;
     public float speed;
-
+    public int AsteroidDamage = 5;
+    public int RockDamage = 1;
     public bool rampageMode = false;
     public AudioClip explode;
 
@@ -27,28 +28,22 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(PlayerHealth <= 0)
+        {
+            Destroy(gameObject);
+        }  
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Asteroid")
         {
-            //PlayerHealth -= damage;
+            PlayerHealth -= AsteroidDamage;
         }
-    }
-    public void TakeDamage (int damage)
-    {
-        PlayerHealth -= damage;
-
-        if(PlayerHealth <= 0)
+        if(collision.gameObject.tag == "Rock")
         {
-            Die();
+            PlayerHealth -= RockDamage;
         }
     }
 
-    void Die()
-    {
-        Destroy(gameObject);
-    }
 }
