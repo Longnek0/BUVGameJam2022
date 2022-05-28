@@ -17,7 +17,7 @@ public class FollowMouse : MonoBehaviour
     private float maxSpeed;
     [SerializeField] private HealthManager hm;
     public bool canMove;
-
+    public Pause pause;
     public bool takeOff; //changed based on level
     // Start is called before the first frame update
     void Start()
@@ -33,6 +33,14 @@ public class FollowMouse : MonoBehaviour
         mouseWorldPosition.y = -2.85f;
         mouseWorldPosition.z = 0f;
 
+        if (pause.GamePaused)
+        {
+            canMove = false;
+        }
+        else
+        {
+            canMove = true;
+        }
         if (canMove == true)
         {
             //Check for when player reach left border
