@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public Text levelUp, maxLevel, livesUp;
     GameObject a, b;
 
-    public int Health = 5;
+    
     public Rigidbody2D rb;
     public float speed;
 
@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     public AudioClip levelUp;
 
 =======
-    public float PlayerHealth;
+    public int PlayerHealth = 5;
 >>>>>>> 828fd8ccb7d057fb2ddfc5b0394aa8984d309631
     // Start is called before the first frame update
     void Start()
