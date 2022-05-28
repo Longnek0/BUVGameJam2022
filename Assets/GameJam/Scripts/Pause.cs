@@ -22,6 +22,7 @@ public class Pause : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(Time.deltaTime);
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GamePaused)
@@ -46,7 +47,7 @@ public class Pause : MonoBehaviour
     private void StopGame()
     {
         pauseMenu.SetActive(true);
-        audio.Pause();
+        //audio.Pause();
         Time.timeScale = 0f;
         GamePaused = true;
     }
