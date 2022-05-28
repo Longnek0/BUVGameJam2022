@@ -59,8 +59,8 @@ public class FollowMouse : MonoBehaviour
             else if (mouseWorldPosition.x >= -2.5 && mouseWorldPosition.x <= 2.5)
             {
                 Cursor. visible = false;
-                //transform.position = Vector2.MoveTowards(transform.position, mouseWorldPosition, maxSpeed*Time.deltaTime);
-                transform.position = mouseWorldPosition;
+                transform.position = Vector2.MoveTowards(transform.position, mouseWorldPosition, maxSpeed*Time.deltaTime);
+                //transform.position = mouseWorldPosition;
             }
         }
 

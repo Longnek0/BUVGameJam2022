@@ -26,6 +26,5 @@ public class TheAsteroidHitDirectly : MonoBehaviour
         {
             Destroy(this.gameObject);  
         }
-        
     }
 }
