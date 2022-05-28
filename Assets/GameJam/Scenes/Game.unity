@@ -585,7 +585,7 @@ GameObject:
   m_Component:
   - component: {fileID: 294259369}
   - component: {fileID: 294259368}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: Untitled-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +651,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294259367}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.08, y: -3.11, z: 1}
+  m_LocalPosition: {x: 0.08, y: -3.11, z: -1}
   m_LocalScale: {x: 1.2865001, y: 1.3347439, z: 1.24}
   m_Children:
   - {fileID: 1753608513}
@@ -3260,6 +3260,14 @@ PrefabInstance:
       propertyPath: FailMenu
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3999857913140982166, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
+    - target: {fileID: 3999857913140982166, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 4409361168048298518, guid: 76452befaa333d34ca959b98cec02451, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3343,6 +3351,30 @@ PrefabInstance:
     - target: {fileID: 4409361168048298518, guid: 76452befaa333d34ca959b98cec02451, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452638869369215566, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
+    - target: {fileID: 7452638869369215566, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693171983113660722, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 652f7165b7c30ab46af6c4aad90a639b, type: 2}
+    - target: {fileID: 7693171983113660722, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693171983113660722, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693171983113660722, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 8361463647766341043, guid: 76452befaa333d34ca959b98cec02451, type: 3}
       propertyPath: m_Name
