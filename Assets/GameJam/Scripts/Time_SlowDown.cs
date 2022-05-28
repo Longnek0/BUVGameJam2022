@@ -1,78 +1,66 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Time_SlowDown : MonoBehaviour
 {
+    public bool SpaceHit;
 
+    public bool Time_Normal;
+
+<<<<<<< Updated upstream
     public bool SpaceAlreadyHit;
     public bool Time_Slowed = false;
     public bool Time_Normal = true;
+=======
+>>>>>>> Stashed changes
     // Start is called before the first frame update
     void Start()
     {
-        
+        SpaceHit = false;
+        Time_Normal = true;
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (Time_Normal)
+            if (Time_Normal == true)
             {
                 MakeTimeSlow();
-                StartCoroutine(SlowTimeRange());
             }
-
-            else if(Time_Slowed)
-            {
-                StartCoroutine(ReturnNormal());
-            }
-
-            else
+            else if (Time_Normal == false)
             {
                 MakeTimeNormal();
             }
         }
-
-        
-    }
-    IEnumerator ReturnNormal()
-    { 
-        if(Time_Normal == false)
-        {
-            if(SpaceAlreadyHit == true)
-            {
-            yield return new WaitForSeconds(3.0f);
-            Time.timeScale = 1.0f;
-            Time_Normal = true;
-            }
-           else
-            {
-                Time.timeScale = 1.0f;
-            }
-        }  
+        StartCoroutine(CheckForCurrent());
     }
 
-    IEnumerator SlowTimeRange()
+    IEnumerator CheckForCurrent()
     {
         yield return new WaitForSeconds(3.0f);
-        Time.timeScale = 1.0f;
-        Time_Normal = true; 
-    }
+        if (Time_Normal == false && SpaceHit == true)
+        {
+            MakeTimeNormal();
+        }
+        else
+        {
 
+        }
+       
+    }
     void MakeTimeSlow()
     {
-        Time_Normal = false;
         Time.timeScale = 0.5f;
-        Time_Slowed = true;
+        SpaceHit = true;
+        Time_Normal = false;
     }
 
     void MakeTimeNormal()
     {
-        Time_Slowed = false;
         Time.timeScale = 1.0f;
         Time_Normal = true;
+        SpaceHit = false;
     }
 }
