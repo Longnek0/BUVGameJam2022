@@ -3740,6 +3740,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1633387099}
+  - component: {fileID: 1633387101}
+  - component: {fileID: 1633387100}
   m_Layer: 0
   m_Name: BAckground
   m_TagString: Untagged
@@ -3774,6 +3776,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1633387100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633387098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ea7d594fe9ca248812c8eb3298d6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyIn: 7
+--- !u!95 &1633387101
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633387098}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0745c005cfac8d246b43c9bd0b8173df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1731310687
 GameObject:
   m_ObjectHideFlags: 0
@@ -5111,6 +5145,7 @@ GameObject:
   - component: {fileID: 7919187502869031438}
   - component: {fileID: 4384849673830368685}
   - component: {fileID: 9129128418360311486}
+  - component: {fileID: 4687665888036491524}
   m_Layer: 0
   m_Name: OurShipv1.1
   m_TagString: Player
@@ -5118,6 +5153,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4687665888036491524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4687665888036491523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36ff128d4ed76384f81e46705e79cd94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &4915657207256599650
 Animator:
   serializedVersion: 3
