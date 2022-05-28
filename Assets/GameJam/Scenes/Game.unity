@@ -1497,9 +1497,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1923813166}
   - component: {fileID: 1923813167}
+  - component: {fileID: 1923813168}
   m_Layer: 0
   m_Name: point
-  m_TagString: Untagged
+  m_TagString: Des
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1528,10 +1529,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.2010963, y: 0}
+  m_Offset: {x: 1.2040546, y: 0.22778237}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1542,8 +1543,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.041514993, y: 1}
+  m_Size: {x: 0.04743147, y: 1.4555647}
   m_EdgeRadius: 0
+--- !u!114 &1923813168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923813165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10517369a9b5aa64bbce3863594b93bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
 --- !u!4 &2014866809 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 892063900967937090, guid: c99129ff1e1409d4bbce1b4bd2a874a6, type: 3}

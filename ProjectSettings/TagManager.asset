@@ -12,6 +12,7 @@ TagManager:
   - EnemyBullet
   - enemy
   - Des
+  - Asteroid
   layers:
   - Default
   - TransparentFX
