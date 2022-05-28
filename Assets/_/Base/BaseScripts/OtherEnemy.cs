@@ -7,18 +7,18 @@ using CodeMonkey.Utils;
 /*
  * Enemy
  * */
-public class Enemy : MonoBehaviour {
+public class OtherEnemy : MonoBehaviour {
     
     public interface IEnemyTargetable {
         Vector3 GetPosition();
-        void Damage(Enemy attacker);
+        void Damage(OtherEnemy attacker);
     }
 
-    public static List<Enemy> enemyList = new List<Enemy>();
+    public static List<OtherEnemy> enemyList = new List<OtherEnemy>();
 
-    public static Enemy GetClosestEnemy(Vector3 position, float maxRange) {
-        Enemy closest = null;
-        foreach (Enemy enemy in enemyList) {
+    public static OtherEnemy GetClosestEnemy(Vector3 position, float maxRange) {
+        OtherEnemy closest = null;
+        foreach (OtherEnemy enemy in enemyList) {
             if (enemy.IsDead()) continue;
             if (Vector3.Distance(position, enemy.GetPosition()) <= maxRange) {
                 if (closest == null) {
@@ -34,10 +34,10 @@ public class Enemy : MonoBehaviour {
     }
 
 
-    public static Enemy Create(Vector3 position) {
+    public static OtherEnemy Create(Vector3 position) {
         Transform enemyTransform = Instantiate(GameAssets.i.pfEnemy, position, Quaternion.identity);
 
-        Enemy enemyHandler = enemyTransform.GetComponent<Enemy>();
+        OtherEnemy enemyHandler = enemyTransform.GetComponent<OtherEnemy>();
 
         return enemyHandler;
     }
