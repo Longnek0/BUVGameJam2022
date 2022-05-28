@@ -5,14 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     //public Text levelUp, maxLevel, livesUp;
-    GameObject a, b;
+    //GameObject a, b;
 
     
     public Rigidbody2D rb;
-    public float speed;
+    
 
-    public bool rampageMode = false;
-    public AudioClip explode;
+    //public bool rampageMode = false;
+    //public AudioClip explode;
 
     //public AudioClip livesUp;
     //public AudioClip levelUp;
