@@ -966,11 +966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rate: 1
   asteroids:
-  - {fileID: 5624869221630779905, guid: d596f5d1e64cb7247b4867c588beb2f7, type: 3}
-  - {fileID: 7427909870629358838, guid: fae61001040454a4bbc1643e3c7fc59b, type: 3}
-  - {fileID: 1862283275306756786, guid: 6031ca4ebf4c9024ab1c089d288d8910, type: 3}
-  - {fileID: 4311392313526650583, guid: 592ce2f9bfd764148978ae4f766329cb, type: 3}
-  - {fileID: 3719124391393502246, guid: 0999f7e553e54ce46b3f2fceea541134, type: 3}
+  - {fileID: 1844631489124881032, guid: fae61001040454a4bbc1643e3c7fc59b, type: 3}
   waves: 2
 --- !u!4 &1367883633
 Transform:
@@ -1555,6 +1551,7 @@ GameObject:
   - component: {fileID: 1923813166}
   - component: {fileID: 1923813167}
   - component: {fileID: 1923813168}
+  - component: {fileID: 1923813169}
   m_Layer: 0
   m_Name: point
   m_TagString: Des
@@ -1615,6 +1612,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  rb: {fileID: 0}
+  player: {fileID: 0}
+--- !u!50 &1923813169
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923813165}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!4 &2014866809 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 892063900967937090, guid: c99129ff1e1409d4bbce1b4bd2a874a6, type: 3}
