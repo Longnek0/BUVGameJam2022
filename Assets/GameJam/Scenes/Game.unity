@@ -2838,6 +2838,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1350688547}
     m_Modifications:
+    - target: {fileID: 638004719778182606, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_Color.a
+      value: 0.54901963
+      objectReference: {fileID: 0}
     - target: {fileID: 4409361168048298518, guid: 76452befaa333d34ca959b98cec02451, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
