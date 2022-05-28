@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,9 +19,13 @@ public class TheAsteroidHitDirectly : MonoBehaviour
     {
             
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+   
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(collision.gameObject.tag== "Des")
-        Destroy(this.gameObject);
+        if (other.gameObject.tag == "Des")
+        {
+            Destroy(this.gameObject);  
+        }
+        
     }
 }

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1844631489124881036}
   - component: {fileID: 1844631489124881037}
   - component: {fileID: 1844631489124881034}
-  - component: {fileID: 1844631489124881035}
   m_Layer: 0
   m_Name: Rock1
   m_TagString: Asteroid
@@ -136,19 +135,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
---- !u!58 &1844631489124881035
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1844631489124881032}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.23233747
+  rb: {fileID: 0}
+  player: {fileID: 0}
