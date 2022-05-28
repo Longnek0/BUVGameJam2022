@@ -17,7 +17,7 @@ public class FollowMouse : MonoBehaviour
     private float maxSpeed;
     [SerializeField] private HealthManager hm;
     public bool canMove;
-
+    public Pause pause;
     public bool takeOff; //changed based on level
     // Start is called before the first frame update
     void Start()
@@ -33,26 +33,34 @@ public class FollowMouse : MonoBehaviour
         mouseWorldPosition.y = -2.85f;
         mouseWorldPosition.z = 0f;
 
+        if (pause.GamePaused)
+        {
+            canMove = false;
+        }
+        else
+        {
+            canMove = true;
+        }
         if (canMove == true)
         {
             //Check for when player reach left border
-            if ( mouseWorldPosition.x <=- 2.9 )
+            if ( mouseWorldPosition.x <=- 2.5 )
             {
                 Cursor. visible = true;
                 this.transform.position = rightBorder.transform.position;
             }
             //Check for when player reach right border
-            else if ( mouseWorldPosition.x >= 2.9 )
+            else if ( mouseWorldPosition.x >= 2.5 )
             {
                 Cursor. visible = true;
                 this.transform.position = leftBorder.transform.position;
             }
             //Check for when player is in the middle 
-            else if (mouseWorldPosition.x >= -2.15 && mouseWorldPosition.x <= 2.15)
+            else if (mouseWorldPosition.x >= -2.5 && mouseWorldPosition.x <= 2.5)
             {
                 Cursor. visible = false;
-                //transform.position = Vector2.MoveTowards(transform.position, mouseWorldPosition, maxSpeed*Time.deltaTime);
-                transform.position = mouseWorldPosition;
+                transform.position = Vector2.MoveTowards(transform.position, mouseWorldPosition, maxSpeed*Time.deltaTime);
+                //transform.position = mouseWorldPosition;
             }
         }
 
@@ -73,6 +81,10 @@ public class FollowMouse : MonoBehaviour
         else if (col.gameObject.tag == "Asteroid")
         {
             hm.health -= 2;
+        }
+        else if (col.gameObject.tag == "Potion")
+        {
+            hm.health += 1;
         }
     }
 
