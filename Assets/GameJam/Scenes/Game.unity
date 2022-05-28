@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 303328873}
   - component: {fileID: 303328872}
   m_Layer: 5
-  m_Name: HealthBar (5)
+  m_Name: HealthBar empty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -536,17 +536,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303328871}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.2294323, y: 5.6946363, z: 1}
   m_Children: []
-  m_Father: {fileID: 1350688547}
-  m_RootOrder: 8
+  m_Father: {fileID: 843312496}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: -477}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -401.8, y: -457.9063}
+  m_SizeDelta: {x: 54.173, y: 58.4183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &345450205
 GameObject:
@@ -667,7 +667,7 @@ GameObject:
   - component: {fileID: 394294522}
   - component: {fileID: 394294521}
   m_Layer: 5
-  m_Name: HealthBar (4)
+  m_Name: HealthBar 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -722,13 +722,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.2294323, y: 5.6946363, z: 1}
   m_Children: []
-  m_Father: {fileID: 1350688547}
-  m_RootOrder: 7
+  m_Father: {fileID: 843312496}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: -477}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -401.8, y: -457.9063}
+  m_SizeDelta: {x: 54.173, y: 58.4183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &398473861
 GameObject:
@@ -742,7 +742,7 @@ GameObject:
   - component: {fileID: 398473865}
   - component: {fileID: 398473864}
   m_Layer: 5
-  m_Name: HealthBar (1)
+  m_Name: HealthBar 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -759,13 +759,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.2294323, y: 5.6946363, z: 1}
   m_Children: []
-  m_Father: {fileID: 1350688547}
-  m_RootOrder: 4
+  m_Father: {fileID: 843312496}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: -477}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -401.8, y: -457.9063}
+  m_SizeDelta: {x: 54.173, y: 58.4183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &398473864
 MonoBehaviour:
@@ -1052,7 +1052,7 @@ GameObject:
   - component: {fileID: 762858920}
   - component: {fileID: 762858919}
   m_Layer: 5
-  m_Name: HealthBar
+  m_Name: HealthBar 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1065,17 +1065,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762858917}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.2294323, y: 5.6946363, z: 1}
   m_Children: []
-  m_Father: {fileID: 1350688547}
-  m_RootOrder: 3
+  m_Father: {fileID: 843312496}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: -477}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -401.8, y: -457.9063}
+  m_SizeDelta: {x: 54.173, y: 58.4183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &762858919
 MonoBehaviour:
@@ -1127,7 +1127,7 @@ GameObject:
   - component: {fileID: 817055263}
   - component: {fileID: 817055262}
   m_Layer: 5
-  m_Name: HealthBar (3)
+  m_Name: HealthBar 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1144,13 +1144,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.2294323, y: 5.6946363, z: 1}
   m_Children: []
-  m_Father: {fileID: 1350688547}
-  m_RootOrder: 6
+  m_Father: {fileID: 843312496}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: -477}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -401.8, y: -457.9063}
+  m_SizeDelta: {x: 54.173, y: 58.4183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &817055262
 MonoBehaviour:
@@ -1190,6 +1190,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817055259}
   m_CullTransparentMesh: 1
+--- !u!1 &843312495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 843312496}
+  m_Layer: 5
+  m_Name: HealthBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &843312496
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843312495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 394294523}
+  - {fileID: 817055260}
+  - {fileID: 1512641520}
+  - {fileID: 398473862}
+  - {fileID: 762858918}
+  - {fileID: 303328874}
+  m_Father: {fileID: 1350688547}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1015571464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,12 +1779,7 @@ RectTransform:
   - {fileID: 196264088}
   - {fileID: 1731310688}
   - {fileID: 1015571465}
-  - {fileID: 762858918}
-  - {fileID: 398473862}
-  - {fileID: 1512641520}
-  - {fileID: 817055260}
-  - {fileID: 394294523}
-  - {fileID: 303328874}
+  - {fileID: 843312496}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2200,7 +2236,7 @@ GameObject:
   - component: {fileID: 1512641523}
   - component: {fileID: 1512641522}
   m_Layer: 5
-  m_Name: HealthBar (2)
+  m_Name: HealthBar 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2217,13 +2253,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.2294323, y: 5.6946363, z: 1}
   m_Children: []
-  m_Father: {fileID: 1350688547}
-  m_RootOrder: 5
+  m_Father: {fileID: 843312496}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: -477}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -401.8, y: -457.9063}
+  m_SizeDelta: {x: 54.173, y: 58.4183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512641522
 MonoBehaviour:
