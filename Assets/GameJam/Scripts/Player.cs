@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public float speed;
     public int AsteroidDamage = 5;
     public int RockDamage = 1;
+    public int PotionHeal;
     public bool rampageMode = false;
     public AudioClip explode;
 
@@ -46,6 +47,10 @@ public class Player : MonoBehaviour
         if(collision.gameObject.tag == "Rock")
         {
             PlayerHealth -= RockDamage;
+        }
+        if (collision.gameObject.tag == "Potion")
+        {
+            PlayerHealth += PotionHeal;
         }
     }
 

@@ -36,19 +36,19 @@ public class FollowMouse : MonoBehaviour
         if (canMove == true)
         {
             //Check for when player reach left border
-            if ( mouseWorldPosition.x <=- 2.9 )
+            if ( mouseWorldPosition.x <=- 2.5 )
             {
                 Cursor. visible = true;
                 this.transform.position = rightBorder.transform.position;
             }
             //Check for when player reach right border
-            else if ( mouseWorldPosition.x >= 2.9 )
+            else if ( mouseWorldPosition.x >= 2.5 )
             {
                 Cursor. visible = true;
                 this.transform.position = leftBorder.transform.position;
             }
             //Check for when player is in the middle 
-            else if (mouseWorldPosition.x >= -2.15 && mouseWorldPosition.x <= 2.15)
+            else if (mouseWorldPosition.x >= -2.5 && mouseWorldPosition.x <= 2.5)
             {
                 Cursor. visible = false;
                 //transform.position = Vector2.MoveTowards(transform.position, mouseWorldPosition, maxSpeed*Time.deltaTime);
@@ -73,6 +73,10 @@ public class FollowMouse : MonoBehaviour
         else if (col.gameObject.tag == "Asteroid")
         {
             hm.health -= 2;
+        }
+        else if (col.gameObject.tag == "Potion")
+        {
+            hm.health += 1;
         }
     }
 

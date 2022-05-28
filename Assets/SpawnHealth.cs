@@ -22,7 +22,7 @@ public class SpawnHealth : MonoBehaviour
     {
         for (int i = 0; i < waves; i++)
         {
-            Instantiate(potion[(int)Random.Range(0, potion.Length)], new Vector3(Random.Range(-8f, 8f), 8f, 1), Quaternion.identity);
+            Instantiate(potion[(int)Random.Range(0, potion.Length)], new Vector3(Random.Range(-2.5f, 2.5f), 7f, 1), Quaternion.identity);
         }
     }
 }
