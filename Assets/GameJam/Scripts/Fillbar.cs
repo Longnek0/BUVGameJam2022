@@ -6,23 +6,24 @@ using UnityEngine.UI;
 
 public class Fillbar : MonoBehaviour
 {
-    public Image timerBar;
+    public Slider timerBar;
     public float gameTime;
     private float timeLeft;
     // Start is called before the first frame update
     void Start()
     {
         
-        timeLeft = gameTime;
+        timeLeft = 0;
+        timerBar.value = 0  ;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timeLeft >0)
+        if (timeLeft < gameTime)
         {
-            timeLeft -= Time.deltaTime;
-            timerBar.fillAmount = timeLeft / gameTime  ;
+            timeLeft += Time.deltaTime;
+            timerBar.value = timeLeft/gameTime;
         }
         else
         {
