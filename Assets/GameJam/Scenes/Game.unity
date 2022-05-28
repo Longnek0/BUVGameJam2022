@@ -215,13 +215,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6452070}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c51ea13e5f713654897c97b6f5b5db4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   redRocket: {fileID: 527119024}
+  sideRocket_left: {fileID: 0}
+  sideRocket_right: {fileID: 0}
   ANi: {fileID: 6452072}
+  Rocketsides: {fileID: 0}
+  Rocketsides_1: {fileID: 0}
 --- !u!224 &196264088 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4409361168048298518, guid: 76452befaa333d34ca959b98cec02451, type: 3}
@@ -239,7 +243,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -764,7 +768,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redRocket: {fileID: 0}
+  sideRocket_left: {fileID: 0}
+  sideRocket_right: {fileID: 0}
   ANi: {fileID: 0}
+  Rocketsides: {fileID: 0}
+  Rocketsides_1: {fileID: 0}
 --- !u!111 &1121652258
 Animation:
   m_ObjectHideFlags: 0
@@ -797,12 +805,7 @@ MonoBehaviour:
   leftBorder: {fileID: 2074486272}
   rightBorder: {fileID: 202709183}
   maxSpeed: 10
-  ani: {fileID: 1121652260}
---- !u!95 &1121652260 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2511425726038776964, guid: 32b7c98079c58de4e8ecc7fb13a82c9f, type: 3}
-  m_PrefabInstance: {fileID: 7175449038492738991}
-  m_PrefabAsset: {fileID: 0}
+  ani: {fileID: 0}
 --- !u!60 &1121652263
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -914,7 +917,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121652256}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1265,10 +1268,6 @@ MonoBehaviour:
   rate: 1
   asteroids:
   - {fileID: 1844631489124881032, guid: fae61001040454a4bbc1643e3c7fc59b, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   waves: 2
 --- !u!4 &1367883633
 Transform:
@@ -1959,7 +1958,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2117,6 +2116,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: OurShip
       objectReference: {fileID: 0}
+    - target: {fileID: 2420772108369222042, guid: 32b7c98079c58de4e8ecc7fb13a82c9f, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511425726038776964, guid: 32b7c98079c58de4e8ecc7fb13a82c9f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2511425726038776964, guid: 32b7c98079c58de4e8ecc7fb13a82c9f, type: 3}
       propertyPath: m_Controller
       value: 
@@ -2127,7 +2134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4790798111583044665, guid: 32b7c98079c58de4e8ecc7fb13a82c9f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 4790798111583044665, guid: 32b7c98079c58de4e8ecc7fb13a82c9f, type: 3}
       propertyPath: m_LocalPosition.y

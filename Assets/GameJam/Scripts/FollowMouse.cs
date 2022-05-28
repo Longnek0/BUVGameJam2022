@@ -33,13 +33,13 @@ public class FollowMouse : MonoBehaviour
          if ( mouseWorldPosition.x <=- 2.9 )
          {
              Cursor. visible = true;
-            this.transform.position = leftBorder.transform.position;
+            this.transform.position = rightBorder.transform.position;
          }
          //Check for when player reach right border
          else if ( mouseWorldPosition.x >= 2.9 )
          {
              Cursor. visible = true;
-            this.transform.position = rightBorder.transform.position;
+            this.transform.position = leftBorder.transform.position;
          }
          //Check for when player is in the middle 
          else if (mouseWorldPosition.x >= -2.15 && mouseWorldPosition.x <= 2.15)
