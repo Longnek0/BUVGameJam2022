@@ -3521,6 +3521,18 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.54901963
       objectReference: {fileID: 0}
+    - target: {fileID: 1622002851759800704, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622002851759800704, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622002851759800704, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2040329561179185407, guid: 76452befaa333d34ca959b98cec02451, type: 3}
       propertyPath: WinMenu
       value: 
@@ -3648,6 +3660,30 @@ PrefabInstance:
     - target: {fileID: 8361463647766341043, guid: 76452befaa333d34ca959b98cec02451, type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460363707105664852, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460363707105664852, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460363707105664852, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924281218963923784, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924281218963923784, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924281218963923784, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76452befaa333d34ca959b98cec02451, type: 3}
@@ -4153,6 +4189,44 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8361463647766341043, guid: 76452befaa333d34ca959b98cec02451, type: 3}
   m_PrefabInstance: {fileID: 1475078964}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1741061987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741061983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!223 &1741061988
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741061983}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 1
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 1
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1753608512
 GameObject:
   m_ObjectHideFlags: 0
@@ -5219,8 +5293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36ff128d4ed76384f81e46705e79cd94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpaceAlreadyHit: 0
-  Time_Slowed: 0
+  SpaceHit: 0
+  timeSinceSlowed: 0
   Time_Normal: 1
 --- !u!4 &4781636426735752697
 Transform:

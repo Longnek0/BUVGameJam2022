@@ -85,6 +85,7 @@ public class FollowMouse : MonoBehaviour
         {
             Destroy(this.gameObject);
             SceneManager.LoadScene("GameOver");
+            Cursor.visible = true;
         }
     }
 
