@@ -14,7 +14,7 @@ public class FollowMouse : MonoBehaviour
     private Transform rightBorder;
     [SerializeField]
     private float maxSpeed;
-    public Animator ani;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -51,11 +51,5 @@ public class FollowMouse : MonoBehaviour
          
     }
     
-    void PlayAlime()
-    {
-        if (Input.GetKey(KeyCode.E))
-        {
-            ani.SetTrigger("rocc");
-        }
-    }
+    
 }
