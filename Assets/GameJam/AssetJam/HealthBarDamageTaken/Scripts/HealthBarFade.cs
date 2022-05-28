@@ -41,8 +41,8 @@ public class HealthBarFade : MonoBehaviour {
         healthSystem.OnDamaged += HealthSystem_OnDamaged;
         healthSystem.OnHealed += HealthSystem_OnHealed;
         
-        transform.Find("damageBtn").GetComponent<Button_UI>().ClickFunc = () => healthSystem.Damage(10);
-        transform.Find("healBtn").GetComponent<Button_UI>().ClickFunc = () => healthSystem.Heal(10);
+        //transform.Find("damageBtn").GetComponent<Button_UI>().ClickFunc = () => healthSystem.Damage(10);
+        //transform.Find("healBtn").GetComponent<Button_UI>().ClickFunc = () => healthSystem.Heal(10);
     }
 
     private void Update() {
