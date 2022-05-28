@@ -2428,7 +2428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerBar: {fileID: 1759902790}
-  gameTime: 60
+  gameTime: 420
 --- !u!4 &1217189531
 Transform:
   m_ObjectHideFlags: 0
@@ -2962,10 +2962,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c191954331376d34a863aa4da53bb045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 1
+  rate: 0.3
   asteroids:
   - {fileID: 1844631489124881032, guid: fae61001040454a4bbc1643e3c7fc59b, type: 3}
-  waves: 2
+  waves: 1
 --- !u!4 &1367883633
 Transform:
   m_ObjectHideFlags: 0
@@ -3005,10 +3005,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c191954331376d34a863aa4da53bb045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 10
+  rate: 9
   asteroids:
   - {fileID: 6691782479788033457, guid: 68473a1f8e213224bb8a3a657fb250b0, type: 3}
-  waves: 2
+  waves: 1
 --- !u!114 &1367883636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5785,6 +5785,7 @@ MonoBehaviour:
   isShielded: 0
   shield: {fileID: 4093268986930724914}
   shieldDur: 4
+  canUseShield: 0
 --- !u!95 &9211716399706851185
 Animator:
   serializedVersion: 3
