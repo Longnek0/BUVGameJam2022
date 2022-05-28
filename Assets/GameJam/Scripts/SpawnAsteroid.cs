@@ -23,7 +23,7 @@ public class SpawnAsteroid : MonoBehaviour
     {
         for (int i = 0; i < waves; i++)
         {
-            Instantiate(asteroids[(int)Random.Range(0, asteroids.Length)], new Vector3(Random.Range(-8f, 8f), 5.5f, 1), Quaternion.identity);
+            Instantiate(asteroids[(int)Random.Range(0, asteroids.Length)], new Vector3(Random.Range(-8f, 8f), 8f, 1), Quaternion.identity);
         }
     }
  
