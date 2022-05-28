@@ -12,7 +12,7 @@ public class Fillbar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerBar= GetComponent<Image>();
+        
         timeLeft = gameTime;
     }
 

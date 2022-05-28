@@ -26,7 +26,7 @@ public class FollowMouse : MonoBehaviour
     {
         mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorldPosition.y = -4f;
+        mouseWorldPosition.y = -3.5f;
         mouseWorldPosition.z = 0f;
            
         //Check for when player reach left border
