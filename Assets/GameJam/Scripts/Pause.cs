@@ -6,8 +6,7 @@ public class Pause : MonoBehaviour
 {
     public static bool GamePaused = false;
     public GameObject pauseMenu;
-    public GameObject WinMenu;
-    public GameObject FailMenu;
+
     public AudioSource audio;
     public static bool GameWon = false;
 
@@ -16,8 +15,8 @@ public class Pause : MonoBehaviour
         GamePaused = false;
         GameWon = false;
         pauseMenu.SetActive(false);
-        WinMenu.SetActive(false);
-        FailMenu.SetActive(false);
+     
+      
     }
 
     private void Update()
