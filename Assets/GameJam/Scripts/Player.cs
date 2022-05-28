@@ -9,18 +9,18 @@ public class Player : MonoBehaviour
 
     
     public Rigidbody2D rb;
-<<<<<<< HEAD
-    
+
+    public Animator ani;
 
     //public bool rampageMode = false;
     //public AudioClip explode;
-=======
+
     public float speed;
     public int AsteroidDamage = 5;
     public int RockDamage = 1;
     public bool rampageMode = false;
     public AudioClip explode;
->>>>>>> 412f6d372640f88317044e549c9105f4e4641bd3
+
 
     //public AudioClip livesUp;
     //public AudioClip levelUp;

@@ -19,7 +19,7 @@ public class HealthSystem : MonoBehaviour {
 
     //sohail
     public float boomx, boomy;
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     public event EventHandler OnDamaged;
     public event EventHandler OnHealed;
