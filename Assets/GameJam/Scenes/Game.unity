@@ -1342,63 +1342,6 @@ Transform:
   m_Father: {fileID: 1731310688}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1578051137
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6311268817152974011, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
-      propertyPath: m_Name
-      value: 'Side rocket animation '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841743137907612, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841743137907612, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -11.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841743137907612, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -6.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841743137907612, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841743137907612, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841743137907612, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841743137907612, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841743137907612, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841743137907612, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841743137907612, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841743137907612, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 117d07e8e5061f04485fc843a6dfef05, type: 3}
 --- !u!1 &1731310687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,7 +1528,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 1.2010963, y: 0}
@@ -1718,6 +1661,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 892063900967937088, guid: c99129ff1e1409d4bbce1b4bd2a874a6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 892063900967937088, guid: c99129ff1e1409d4bbce1b4bd2a874a6, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.8
+      objectReference: {fileID: 0}
     - target: {fileID: 892063900967937090, guid: c99129ff1e1409d4bbce1b4bd2a874a6, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1762,6 +1713,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 892063900967937091, guid: c99129ff1e1409d4bbce1b4bd2a874a6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 53ab4306aaa136442b987430b83066f4, type: 3}
     - target: {fileID: 892063900967937093, guid: c99129ff1e1409d4bbce1b4bd2a874a6, type: 3}
       propertyPath: m_Name
       value: Player
