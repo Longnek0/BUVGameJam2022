@@ -546,7 +546,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -401.8, y: -457.9063}
-  m_SizeDelta: {x: 54.173, y: 58.4183}
+  m_SizeDelta: {x: 59.9, y: 60.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &345450205
 GameObject:
@@ -885,7 +885,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -401.8, y: -457.9063}
-  m_SizeDelta: {x: 54.173, y: 58.4183}
+  m_SizeDelta: {x: 59.9, y: 60.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &398473861
 GameObject:
@@ -922,7 +922,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -401.8, y: -457.9063}
-  m_SizeDelta: {x: 54.173, y: 58.4183}
+  m_SizeDelta: {x: 59.9, y: 60.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &398473864
 MonoBehaviour:
@@ -1389,7 +1389,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -401.8, y: -457.9063}
-  m_SizeDelta: {x: 54.173, y: 58.4183}
+  m_SizeDelta: {x: 59.9, y: 60.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &762858919
 MonoBehaviour:
@@ -1464,7 +1464,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -401.8, y: -457.9063}
-  m_SizeDelta: {x: 54.173, y: 58.4183}
+  m_SizeDelta: {x: 59.9, y: 60.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &817055262
 MonoBehaviour:
@@ -3036,7 +3036,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -401.8, y: -457.9063}
-  m_SizeDelta: {x: 54.173, y: 58.4183}
+  m_SizeDelta: {x: 59.9, y: 60.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512641522
 MonoBehaviour:
