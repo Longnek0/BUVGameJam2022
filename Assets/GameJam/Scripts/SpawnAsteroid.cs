@@ -26,5 +26,5 @@ public class SpawnAsteroid : MonoBehaviour
             Instantiate(asteroids[(int)Random.Range(0, asteroids.Length)], new Vector3(Random.Range(-8f, 8f), 5.5f, 1), Quaternion.identity);
         }
     }
-
+ 
 }

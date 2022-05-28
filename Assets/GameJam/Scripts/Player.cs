@@ -37,4 +37,18 @@ public class Player : MonoBehaviour
             //PlayerHealth -= damage;
         }
     }
+    public void TakeDamage (int damage)
+    {
+        PlayerHealth -= damage;
+
+        if(PlayerHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
+    }
 }
