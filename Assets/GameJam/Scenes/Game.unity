@@ -2824,6 +2824,7 @@ GameObject:
   - component: {fileID: 1367883632}
   - component: {fileID: 1367883634}
   - component: {fileID: 1367883635}
+  - component: {fileID: 1367883636}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -2890,6 +2891,22 @@ MonoBehaviour:
   asteroids:
   - {fileID: 6691782479788033457, guid: 68473a1f8e213224bb8a3a657fb250b0, type: 3}
   waves: 2
+--- !u!114 &1367883636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367883631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e51430bc48f3a04cb94f4cbecfca390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rate: 20
+  potion:
+  - {fileID: 2010193616310849558, guid: 329b47fb794813c44999816262713d8b, type: 3}
+  waves: 1
 --- !u!1 &1409977441
 GameObject:
   m_ObjectHideFlags: 0
@@ -4995,7 +5012,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.01, y: -3.461}
+  m_AnchoredPosition: {x: 0.01, y: -2.85}
   m_SizeDelta: {x: 8.64, y: 16.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &3905676035854968320
