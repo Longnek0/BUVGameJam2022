@@ -30,7 +30,7 @@ public class FollowMouse : MonoBehaviour
     {
         mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorldPosition.y = -3.5f;
+        mouseWorldPosition.y = -2.85f;
         mouseWorldPosition.z = 0f;
 
         if (pause.GamePaused)
