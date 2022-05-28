@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 655959991233490129}
   m_Layer: 0
   m_Name: Rock4
-  m_TagString: Asteroid
+  m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,6 +136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  rb: {fileID: 0}
+  player: {fileID: 0}
 --- !u!58 &655959991233490129
 CircleCollider2D:
   m_ObjectHideFlags: 0
