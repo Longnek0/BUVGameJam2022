@@ -61,7 +61,7 @@ public class Pause : MonoBehaviour
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
-        audio.Play(0);
+        //audio.Play(0);
         Time.timeScale = 1f;
         GamePaused = false;
     }
