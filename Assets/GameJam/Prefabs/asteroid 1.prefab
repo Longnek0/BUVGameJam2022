@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6691782479788033420}
   - component: {fileID: 6691782479788033423}
   - component: {fileID: 6691782479788033422}
+  - component: {fileID: 1698569868130465836}
   m_Layer: 0
   m_Name: asteroid 1
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877754419
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 73ae1f930c7049f468fdf54d8465ede4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -121,3 +122,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1698569868130465836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6691782479788033457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32caf0094ffbb9c4187d10f065560bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

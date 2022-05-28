@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1844631489124881036}
   - component: {fileID: 1844631489124881037}
   - component: {fileID: 1844631489124881034}
+  - component: {fileID: 3879660721875044350}
   m_Layer: 0
   m_Name: Rock1
   m_TagString: Rock
@@ -71,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1877754419
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -3435568192780554090, guid: e0cf7e9b288773f41a84298f543200f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -137,3 +138,15 @@ MonoBehaviour:
   damage: 1
   rb: {fileID: 0}
   player: {fileID: 0}
+--- !u!114 &3879660721875044350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844631489124881032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32caf0094ffbb9c4187d10f065560bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
