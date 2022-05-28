@@ -6,8 +6,8 @@ public class Time_SlowDown : MonoBehaviour
 {
 
     bool SpaceAlreadyHit;
-    public bool Time_Slowed = false;
-    public bool Time_Normal = true;
+    bool Time_Slowed = false;
+    bool Time_Normal = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,13 +15,12 @@ public class Time_SlowDown : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetButtonDown("Jump"))
         {
             if (Time_Normal)
             {
-                SpaceAlreadyHit = true;
                 MakeTimeSlow();
                 StartCoroutine(SlowTimeRange());
             }
@@ -46,15 +45,12 @@ public class Time_SlowDown : MonoBehaviour
             if(SpaceAlreadyHit == true)
             {
             yield return new WaitForSeconds(3.0f);
-            Time_Slowed = false;
             Time.timeScale = 1.0f;
             Time_Normal = true;
             }
            else
             {
-
                 Time.timeScale = 1.0f;
-                Time_Normal = true;
             }
         }  
     }
