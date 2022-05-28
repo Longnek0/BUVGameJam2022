@@ -991,7 +991,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2794,7 +2794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1350688544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2965,6 +2965,9 @@ MonoBehaviour:
   rate: 1
   asteroids:
   - {fileID: 1844631489124881032, guid: fae61001040454a4bbc1643e3c7fc59b, type: 3}
+  - {fileID: 2617643071717202174, guid: 6031ca4ebf4c9024ab1c089d288d8910, type: 3}
+  - {fileID: 4023442812774101516, guid: 592ce2f9bfd764148978ae4f766329cb, type: 3}
+  - {fileID: 655959991233490130, guid: 0999f7e553e54ce46b3f2fceea541134, type: 3}
   waves: 2
 --- !u!4 &1367883633
 Transform:
@@ -3008,7 +3011,7 @@ MonoBehaviour:
   rate: 10
   asteroids:
   - {fileID: 6691782479788033457, guid: 68473a1f8e213224bb8a3a657fb250b0, type: 3}
-  waves: 2
+  waves: 1
 --- !u!114 &1367883636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3021,7 +3024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e51430bc48f3a04cb94f4cbecfca390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 20
+  rate: 50
   potion:
   - {fileID: 2010193616310849558, guid: 329b47fb794813c44999816262713d8b, type: 3}
   waves: 1
@@ -4357,8 +4360,8 @@ RectTransform:
   m_Father: {fileID: 1143817883}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.000005722046, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}

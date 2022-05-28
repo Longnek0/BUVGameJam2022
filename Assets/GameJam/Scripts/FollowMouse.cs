@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FollowMouse : MonoBehaviour
 {
@@ -77,6 +78,11 @@ public class FollowMouse : MonoBehaviour
             StartCoroutine(SetupJet());
         }
         
+        if (hm.health <= 0)
+        {
+            Destroy(this.gameObject);
+            SceneManager.LoadScene("GameOver");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D col)
