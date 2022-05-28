@@ -5,9 +5,9 @@ using UnityEngine;
 public class Time_SlowDown : MonoBehaviour
 {
 
-    bool SpaceAlreadyHit;
-    bool Time_Slowed = false;
-    bool Time_Normal = true;
+    public bool SpaceAlreadyHit;
+    public bool Time_Slowed = false;
+    public bool Time_Normal = true;
     // Start is called before the first frame update
     void Start()
     {
