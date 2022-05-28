@@ -8,19 +8,15 @@ public class Player : MonoBehaviour
     //GameObject a, b;
 
     
-    public Rigidbody2D rb;
-
-    public Animator ani;
+    public Rigidbody2D rb;    
 
     //public bool rampageMode = false;
     //public AudioClip explode;
-
     public float speed;
     public int AsteroidDamage = 5;
     public int RockDamage = 1;
     public bool rampageMode = false;
     public AudioClip explode;
-
 
     //public AudioClip livesUp;
     //public AudioClip levelUp;
