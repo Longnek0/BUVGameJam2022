@@ -7,9 +7,9 @@ using CodeMonkey.Utils;
  * Player movement with Arrow keys
  * Attack with Space
  * */
-public class Player : MonoBehaviour {
+public class OtherPlayer : MonoBehaviour {
     
-    public static Player instance;
+    public static OtherPlayer instance;
 
     private const float SPEED = 50f;
 
