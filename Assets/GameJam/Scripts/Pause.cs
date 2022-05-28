@@ -78,7 +78,7 @@ public class Pause : MonoBehaviour
         Debug.Log("Game restrating...");
         GamePaused = false;
         Time.timeScale = 1f;
-        StartCoroutine(Reload());
+        SceneManager.LoadScene("Game");
     }
 
     public void NextLevel()
