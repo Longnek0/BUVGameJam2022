@@ -12,6 +12,8 @@ public class FollowMouse : MonoBehaviour
     private Transform leftBorder;
     [SerializeField]
     private Transform rightBorder;
+    [SerializeField]
+    private float maxSpeed;
 
     
     // Start is called before the first frame update
@@ -27,14 +29,15 @@ public class FollowMouse : MonoBehaviour
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.y = -4f;
         mouseWorldPosition.z = 0f;
+
         //Check for when player reach left border
-         if ( mouseWorldPosition.x <=- 4 )
+         if ( mouseWorldPosition.x <=- 2.9 )
          {
              Cursor. visible = true;
             this.transform.position = leftBorder.transform.position;
          }
          //Check for when player reach right border
-         else if ( mouseWorldPosition.x >= 4 )
+         else if ( mouseWorldPosition.x >= 2.9 )
          {
              Cursor. visible = true;
             this.transform.position = rightBorder.transform.position;
@@ -43,7 +46,8 @@ public class FollowMouse : MonoBehaviour
          else if (mouseWorldPosition.x >= -2.15 && mouseWorldPosition.x <= 2.15)
          {
              Cursor. visible = false;
-             transform.position = mouseWorldPosition;
+            //transform.position = Vector2.MoveTowards(transform.position, mouseWorldPosition, maxSpeed*Time.deltaTime);
+            transform.position = mouseWorldPosition;
          }
         
     }
