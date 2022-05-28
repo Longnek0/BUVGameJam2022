@@ -98,7 +98,7 @@ public class SpaceShip : MonoBehaviour
     {  
         if(col.gameObject.tag == "Homing")
         {
-            GameObject.Find("BigBoss").GetComponent<BossAttack2>().CheckForLastMissiles();
+            //GameObject.Find("BigBoss").GetComponent<BossAttack2>().CheckForLastMissiles();
             StartCoroutine(StopFiring());
         }
 
