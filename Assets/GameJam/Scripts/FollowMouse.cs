@@ -25,10 +25,12 @@ public class FollowMouse : MonoBehaviour
 
     [SerializeField] public GameObject shield;
     [SerializeField] public float shieldDur;
+
+    public bool canUseShield;
     // Start is called before the first frame update
     void Start()
     {
-        
+        canUseShield = true;
     }
 
     // Update is called once per frame
@@ -38,7 +40,7 @@ public class FollowMouse : MonoBehaviour
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.y = -2.85f;
         mouseWorldPosition.z = 0f;
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && canUseShield==true)
         {
             StartCoroutine(ShieldSkill());
         }
@@ -118,10 +120,13 @@ public class FollowMouse : MonoBehaviour
     }
     public IEnumerator ShieldSkill()
     {
+        canUseShield = false;
         isShielded = true;
         shield.SetActive(true);
         yield return new WaitForSeconds(3);
         shield.SetActive(false);
         isShielded = false;
+        yield return new WaitForSeconds(15);
+        canUseShield = true;
     }
 }
