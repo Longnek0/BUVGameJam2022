@@ -2289,6 +2289,7 @@ GameObject:
   - component: {fileID: 1217189531}
   - component: {fileID: 1217189530}
   - component: {fileID: 1217189532}
+  - component: {fileID: 1217189533}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -2345,6 +2346,21 @@ MonoBehaviour:
   - {fileID: 394294519}
   - {fileID: 303328871}
   health: 5
+--- !u!114 &1217189533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217189529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c2c5da09988426408dc1f32e8132021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GamePaused: 0
+  pauseMenu: {fileID: 1741061983}
+  audio: {fileID: 0}
 --- !u!1 &1243926720
 GameObject:
   m_ObjectHideFlags: 0
@@ -3845,6 +3861,11 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &1741061983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8361463647766341043, guid: 76452befaa333d34ca959b98cec02451, type: 3}
+  m_PrefabInstance: {fileID: 1475078964}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1753608512
 GameObject:
   m_ObjectHideFlags: 0
@@ -5595,6 +5616,7 @@ MonoBehaviour:
   maxSpeed: 10
   hm: {fileID: 1217189532}
   canMove: 0
+  pause: {fileID: 1217189533}
   takeOff: 1
 --- !u!95 &9211716399706851185
 Animator:
