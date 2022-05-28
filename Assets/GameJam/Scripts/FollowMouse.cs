@@ -21,6 +21,7 @@ public class FollowMouse : MonoBehaviour
     public bool canMove;
     public Pause pause;
     public bool takeOff; //changed based on level
+    public bool isShielded;
 
     [SerializeField] public GameObject shield;
     [SerializeField] public float shieldDur;
@@ -87,18 +88,26 @@ public class FollowMouse : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Rock")
+        if (isShielded == true)
         {
-            hm.health -= 1;
+            
         }
-        else if (col.gameObject.tag == "Asteroid")
+        else if (isShielded == false)
         {
-            hm.health -= 2;
+            if (col.gameObject.tag == "Rock")
+            {
+                hm.health -= 1;
+            }
+            else if (col.gameObject.tag == "Asteroid")
+            {
+                hm.health -= 2;
+            }
+            else if (col.gameObject.tag == "Potion")
+            {
+                hm.health += 1;
+            }
         }
-        else if (col.gameObject.tag == "Potion")
-        {
-            hm.health += 1;
-        }
+        
     }
 
     public IEnumerator SetupJet()
@@ -109,8 +118,10 @@ public class FollowMouse : MonoBehaviour
     }
     public IEnumerator ShieldSkill()
     {
+        isShielded = true;
         shield.SetActive(true);
         yield return new WaitForSeconds(3);
         shield.SetActive(false);
+        isShielded = false;
     }
 }
