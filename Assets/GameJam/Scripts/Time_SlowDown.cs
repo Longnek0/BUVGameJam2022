@@ -17,7 +17,7 @@ public class Time_SlowDown : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Jump"))
         {
             if (Time_Normal)
             {
