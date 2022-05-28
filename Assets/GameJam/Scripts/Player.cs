@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float Health;
+    public float PlayerHealth;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +15,13 @@ public class Player : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Asteroid")
+        {
+            PlayerHealth -= damage;
+        }
     }
 }
