@@ -48,7 +48,7 @@ public class Pause : MonoBehaviour
     {
         StartCoroutine(SlowDownGame());
         pauseMenu.SetActive(true);
-        Time.timeScale = 0.0f;
+        Time.timeScale = 0;
         GamePaused = true;
         Debug.Log("Game is paused");
     }
