@@ -6,11 +6,12 @@ public class Time_SlowDown : MonoBehaviour
     public bool SpaceHit;
     public float timeSinceSlowed = 0.0f;
     public bool Time_Normal;
-
+    public Pause pause;
     private void Start()
     {
         SpaceHit = false;
         Time_Normal = true;
+       
     }
 
     // Update is called once per frame
@@ -19,18 +20,18 @@ public class Time_SlowDown : MonoBehaviour
         timeSinceSlowed += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (Time_Normal == true)
+            if (Time_Normal == true && pause.GamePaused==false)
             {
                 MakeTimeSlow();
                 
             }
-            else if (Time_Normal == false)
+            else if (Time_Normal == false && pause.GamePaused == false)
             {
                 MakeTimeNormal();
             }
             
         }
-        if(timeSinceSlowed >= 2.0f)
+        if(timeSinceSlowed >= 2.0f && pause.GamePaused == false)
             {
                 MakeTimeNormal();
             }
