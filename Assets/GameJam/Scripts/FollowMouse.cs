@@ -18,14 +18,15 @@ public class FollowMouse : MonoBehaviour
     [SerializeField]
     private float maxSpeed;
     [SerializeField] private HealthManager hm;
-    public bool canMove;
+    public bool canMove = false;
     public Pause pause;
     public bool takeOff; //changed based on level
     public bool isShielded;
+    public bool GameStarted;
 
     [SerializeField] public GameObject shield;
     [SerializeField] public float shieldDur;
-
+    public SpawnAsteroid spawner;
     public bool canUseShield;
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,14 @@ public class FollowMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Mouse0) && GameStarted == false)
+        {
+            GameStarted = true;
+            takeOff = true;
+            //spawner.SpawnAsteroids();
+            spawner.FirstWave();
+            spawner.WaveUpdate();
+        }
         mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.y = -2.85f;
@@ -44,14 +53,7 @@ public class FollowMouse : MonoBehaviour
         {
             StartCoroutine(ShieldSkill());
         }
-        if (pause.GamePaused)
-        {
-            canMove = false;
-        }
-        else
-        {
-            canMove = true;
-        }
+       
         if (canMove == true)
         {
             //Check for when player reach left border
@@ -115,6 +117,7 @@ public class FollowMouse : MonoBehaviour
 
     public IEnumerator SetupJet()
     {
+        canMove = false;
         yield return new WaitForSeconds(3);
         takeOff = false;
         canMove = true;

@@ -8,6 +8,7 @@ public class Pause : MonoBehaviour
     public GameObject pauseMenu;
 
     public AudioSource audio;
+    public FollowMouse player;
     public static bool GameWon = false;
 
     private void Start()
@@ -37,6 +38,7 @@ public class Pause : MonoBehaviour
 
     private void Resume()
     {
+        player.canMove = true;
         pauseMenu.SetActive(false);
         //audio.Play(0);
         Time.timeScale = 1f;
@@ -46,6 +48,7 @@ public class Pause : MonoBehaviour
 
     private void StopGame()
     {
+        player.canMove = false;
         StartCoroutine(SlowDownGame());
         pauseMenu.SetActive(true);
         Time.timeScale = 0.0f;
@@ -62,6 +65,7 @@ public class Pause : MonoBehaviour
 
     public void ResumeGame()
     {
+        player.canMove = true;
         pauseMenu.SetActive(false);
         //audio.Play(0);
         Time.timeScale = 1f;
