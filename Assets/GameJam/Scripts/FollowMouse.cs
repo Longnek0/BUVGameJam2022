@@ -22,12 +22,13 @@ public class FollowMouse : MonoBehaviour
     public Pause pause;
     public bool takeOff; //changed based on level
     public bool isShielded;
-    public bool GameStarted;
+    public bool GameStarted = false;
 
     [SerializeField] public GameObject shield;
     [SerializeField] public float shieldDur;
     public SpawnAsteroid spawner;
     public bool canUseShield;
+    public GameObject BackGround;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +45,7 @@ public class FollowMouse : MonoBehaviour
             //spawner.SpawnAsteroids();
             spawner.FirstWave();
             spawner.WaveUpdate();
+            BackGround.GetComponent<Animator>().enabled = true;
         }
         mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -118,7 +120,7 @@ public class FollowMouse : MonoBehaviour
     public IEnumerator SetupJet()
     {
         canMove = false;
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(6);
         takeOff = false;
         canMove = true;
     }

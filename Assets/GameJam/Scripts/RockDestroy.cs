@@ -8,7 +8,7 @@ public class RockDestroy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Player" && this.gameObject.tag != "Potion")
+        if (col.gameObject.tag == "Player" )
         {
             
             Destroy(this.gameObject);
