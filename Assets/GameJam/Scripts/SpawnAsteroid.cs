@@ -11,12 +11,14 @@ public class SpawnAsteroid : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnAsteroids", rate, rate);
+        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        StartCoroutine(RateDecrease());
     }
 
     void SpawnAsteroids()
@@ -25,6 +27,25 @@ public class SpawnAsteroid : MonoBehaviour
         {
             Instantiate(asteroids[(int)Random.Range(0, asteroids.Length)], new Vector3(Random.Range(-2.5f, 2.5f), 8f, 1), Quaternion.identity);
         }
+    }
+
+    IEnumerator RateDecrease()
+    {
+        yield return new WaitForSeconds(5f);
+        
+          rate -= 1f;
+
+        yield return new WaitForSeconds(5f);
+        
+           rate -= 1f;
+
+        yield return new WaitForSeconds(5f);
+
+            rate -= 1f;
+
+        yield return new WaitForSeconds(5f);
+
+        rate -= 1f;
     }
  
 }
