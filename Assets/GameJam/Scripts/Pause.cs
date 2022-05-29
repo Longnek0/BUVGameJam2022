@@ -19,12 +19,12 @@ public class Pause : MonoBehaviour
       
     }
 
-    private void Update()
+    void Update()
     {
-        Debug.Log(Time.deltaTime);
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (GamePaused)
+            if (GamePaused == true)
             {
                 Resume();
             }
@@ -41,14 +41,16 @@ public class Pause : MonoBehaviour
         //audio.Play(0);
         Time.timeScale = 1f;
         GamePaused = false;
+        Debug.Log("Game resumes");
     }
 
     private void StopGame()
     {
+        StartCoroutine(SlowDownGame());
         pauseMenu.SetActive(true);
-        //audio.Pause();
-        Time.timeScale = 0f;
+        Time.timeScale = 0.0f;
         GamePaused = true;
+        Debug.Log("Game is paused");
     }
 
     public void LoadMenu()
@@ -93,5 +95,10 @@ public class Pause : MonoBehaviour
         yield return new WaitForSeconds(1);
         Resources.UnloadUnusedAssets();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    IEnumerator SlowDownGame()
+    {
+        Time.timeScale = 0.5f;
+        yield return new WaitForSeconds(0.5f);
     }
 }
