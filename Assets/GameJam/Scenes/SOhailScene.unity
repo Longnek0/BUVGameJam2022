@@ -2769,11 +2769,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e51430bc48f3a04cb94f4cbecfca390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 40
+  rate: 20
   potion:
   - {fileID: 2010193616310849558, guid: 329b47fb794813c44999816262713d8b, type: 3}
-  waves: 1
-  spawnHealth: 0
+  waves: 2
 --- !u!114 &790151568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2786,7 +2785,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c191954331376d34a863aa4da53bb045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Activation: 0
   rate: 20
   asteroids:
   - {fileID: 6691782479788033457, guid: 68473a1f8e213224bb8a3a657fb250b0, type: 3}
@@ -2816,8 +2814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c191954331376d34a863aa4da53bb045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Activation: 0
-  rate: 0.5
+  rate: 5
   asteroids:
   - {fileID: 1844631489124881032, guid: fae61001040454a4bbc1643e3c7fc59b, type: 3}
   waves: 1
@@ -5182,18 +5179,6 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.54901963
       objectReference: {fileID: 0}
-    - target: {fileID: 1622002851759800704, guid: 76452befaa333d34ca959b98cec02451, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622002851759800704, guid: 76452befaa333d34ca959b98cec02451, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1622002851759800704, guid: 76452befaa333d34ca959b98cec02451, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2040329561179185407, guid: 76452befaa333d34ca959b98cec02451, type: 3}
       propertyPath: WinMenu
       value: 
@@ -5326,35 +5311,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 8361463647766341043, guid: 76452befaa333d34ca959b98cec02451, type: 3}
       propertyPath: m_IsActive
       value: 0
-=======
-    - target: {fileID: 8460363707105664852, guid: 76452befaa333d34ca959b98cec02451, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8460363707105664852, guid: 76452befaa333d34ca959b98cec02451, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8460363707105664852, guid: 76452befaa333d34ca959b98cec02451, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8924281218963923784, guid: 76452befaa333d34ca959b98cec02451, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8924281218963923784, guid: 76452befaa333d34ca959b98cec02451, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8924281218963923784, guid: 76452befaa333d34ca959b98cec02451, type: 3}
-      propertyPath: m_Color.r
-      value: 1
->>>>>>> 0f4ddcea50c3c18c97d8b11e1e092010ca62fdc7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76452befaa333d34ca959b98cec02451, type: 3}
@@ -5368,44 +5327,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4409361168048298518, guid: 76452befaa333d34ca959b98cec02451, type: 3}
   m_PrefabInstance: {fileID: 1492195415}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1492195421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492195416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 0
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!223 &1492195422
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492195416}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 1
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 1
-  m_OverridePixelPerfect: 1
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 1
-  m_TargetDisplay: 0
 --- !u!1 &1549144941
 GameObject:
   m_ObjectHideFlags: 0

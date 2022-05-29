@@ -3202,7 +3202,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 1
+  m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -3333,12 +3333,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c191954331376d34a863aa4da53bb045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 0.5
+  rate: 0.3
   asteroids:
   - {fileID: 1844631489124881032, guid: fae61001040454a4bbc1643e3c7fc59b, type: 3}
-  - {fileID: 2617643071717202174, guid: 6031ca4ebf4c9024ab1c089d288d8910, type: 3}
-  - {fileID: 4023442812774101516, guid: 592ce2f9bfd764148978ae4f766329cb, type: 3}
-  - {fileID: 655959991233490130, guid: 0999f7e553e54ce46b3f2fceea541134, type: 3}
   waves: 1
 --- !u!4 &1367883633
 Transform:
@@ -3379,7 +3376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c191954331376d34a863aa4da53bb045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 10
+  rate: 9
   asteroids:
   - {fileID: 6691782479788033457, guid: 68473a1f8e213224bb8a3a657fb250b0, type: 3}
   waves: 1
@@ -3395,7 +3392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e51430bc48f3a04cb94f4cbecfca390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 50
+  rate: 20
   potion:
   - {fileID: 2010193616310849558, guid: 329b47fb794813c44999816262713d8b, type: 3}
   waves: 1
@@ -3631,6 +3628,7 @@ GameObject:
   - component: {fileID: 1408602623}
   - component: {fileID: 1408602622}
   - component: {fileID: 1408602625}
+  - component: {fileID: 1408602624}
   m_Layer: 0
   m_Name: Warning
   m_TagString: Untagged
@@ -3695,7 +3693,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408602620}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 --- !u!212 &1408602624
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3747,8 +3744,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-=======
->>>>>>> 0f4ddcea50c3c18c97d8b11e1e092010ca62fdc7
 --- !u!95 &1408602625
 Animator:
   serializedVersion: 3
@@ -3759,7 +3754,7 @@ Animator:
   m_GameObject: {fileID: 1408602620}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f42ced5e40b04d64bb77b5e7e96e5dc4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7c82af338114b324c9e0932ce1cd8ac8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
