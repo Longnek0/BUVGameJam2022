@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnAsteroid : MonoBehaviour
 {
+    public bool Activation = false;
     public float rate;
     public GameObject[] asteroids;
     public int waves;
@@ -19,14 +20,19 @@ public class SpawnAsteroid : MonoBehaviour
     void Update()
     {
         StartCoroutine(RateDecrease());
+        StartCoroutine(ActivateSpawn());
     }
 
     void SpawnAsteroids()
     {
-        for (int i = 0; i < waves; i++)
+        if(Activation == true)
         {
-            Instantiate(asteroids[(int)Random.Range(0, asteroids.Length)], new Vector3(Random.Range(-2.5f, 2.5f), 8f, 1), Quaternion.identity);
+            for (int i = 0; i < waves; i++)
+            {
+                Instantiate(asteroids[(int)Random.Range(0, asteroids.Length)], new Vector3(Random.Range(-2.5f, 2.5f), 8f, 1), Quaternion.identity);
+            }
         }
+
     }
 
     IEnumerator RateDecrease()
@@ -46,6 +52,13 @@ public class SpawnAsteroid : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         rate -= 1f;
+    }
+
+    IEnumerator ActivateSpawn()
+    {
+        yield return new WaitForSeconds(15f);
+
+        Activation = true;
     }
  
 }

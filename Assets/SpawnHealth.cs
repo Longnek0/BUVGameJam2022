@@ -7,6 +7,7 @@ public class SpawnHealth : MonoBehaviour
     public float rate;
     public GameObject[] potion;
     public int waves;
+    public bool spawnHealth = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,13 +17,24 @@ public class SpawnHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        StartCoroutine(SpawnItem());
     }
     void SpawnPotions()
     {
-        for (int i = 0; i < waves; i++)
+        if (spawnHealth == true)
         {
-            Instantiate(potion[(int)Random.Range(0, potion.Length)], new Vector3(Random.Range(-2.5f, 2.5f), 7f, 1), Quaternion.identity);
+            for (int i = 0; i < waves; i++)
+            {
+                Instantiate(potion[(int)Random.Range(0, potion.Length)], new Vector3(Random.Range(-2.5f, 2.5f), 7f, 1), Quaternion.identity);
+            }
         }
+
+    }
+
+    IEnumerator SpawnItem()
+    {
+        yield return new WaitForSeconds(15f);
+
+        spawnHealth = true;
     }
 }
