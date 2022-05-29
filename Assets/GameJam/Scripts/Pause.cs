@@ -22,7 +22,7 @@ public class Pause : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(Time.deltaTime);
+        //Debug.Log(Time.deltaTime);
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GamePaused == true)
