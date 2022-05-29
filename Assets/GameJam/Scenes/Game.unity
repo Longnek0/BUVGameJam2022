@@ -3333,7 +3333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c191954331376d34a863aa4da53bb045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 5
+  rate: 0.8
   asteroids:
   - {fileID: 1844631489124881032, guid: fae61001040454a4bbc1643e3c7fc59b, type: 3}
   - {fileID: 2617643071717202174, guid: 6031ca4ebf4c9024ab1c089d288d8910, type: 3}
