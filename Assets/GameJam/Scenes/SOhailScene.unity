@@ -2768,10 +2768,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e51430bc48f3a04cb94f4cbecfca390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 20
+  rate: 40
   potion:
   - {fileID: 2010193616310849558, guid: 329b47fb794813c44999816262713d8b, type: 3}
-  waves: 2
+  waves: 1
 --- !u!114 &790151568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2813,7 +2813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c191954331376d34a863aa4da53bb045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 5
+  rate: 0.5
   asteroids:
   - {fileID: 1844631489124881032, guid: fae61001040454a4bbc1643e3c7fc59b, type: 3}
   waves: 1
