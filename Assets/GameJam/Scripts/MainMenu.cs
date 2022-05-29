@@ -14,4 +14,8 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
+    public void Splash_Screen()
+    {
+        SceneManager.LoadScene("Video-BUVSplashScreen");
+    }
 }
