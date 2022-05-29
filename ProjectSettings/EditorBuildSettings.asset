@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/GameJam/Scenes/MainMenu.unity
     guid: 17d86bebb16779041a475d29660ed194
   - enabled: 1
-    path: Assets/GameJam/Scenes/Game.unity
-    guid: a5ac851c5e7c23a40b76429bc9f5986d
+    path: Assets/GameJam/Scenes/SOhailScene.unity
+    guid: cad7142dfbf204340ab4f6cf0bc6377b
   - enabled: 1
     path: Assets/GameJam/Scenes/GameOver.unity
     guid: cb5bf1f106d080946903a523e6a87fc9
