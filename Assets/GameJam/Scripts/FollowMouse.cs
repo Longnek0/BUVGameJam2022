@@ -29,6 +29,7 @@ public class FollowMouse : MonoBehaviour
     public SpawnAsteroid spawner;
     public bool canUseShield;
     public GameObject BackGround;
+    public Text playText;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +47,7 @@ public class FollowMouse : MonoBehaviour
             spawner.FirstWave();
             spawner.WaveUpdate();
             BackGround.GetComponent<Animator>().enabled = true;
+            playText.enabled = false;
         }
         mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
