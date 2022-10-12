@@ -42,6 +42,7 @@ public class EnemyBulletsScript : MonoBehaviour
         if (col.gameObject.tag == "DeathZone")
         {
             Destroy(gameObject);
+            /////////
         }
 
 
